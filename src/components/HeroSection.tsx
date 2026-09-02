@@ -12,6 +12,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import { PROGRAM_CONFIG } from '../data/content';
+import heroMentorImage from '../assets/images/hero_mentor.png';
 
 interface HeroSectionProps {
   onRegisterClick: () => void;
@@ -122,7 +123,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onRegisterClick, onOpe
           <div className="glass-card p-2.5 rounded-2xl group relative shadow-2xl shadow-indigo-950/50 border border-white/10">
             <div className="w-full aspect-[4/5] rounded-xl bg-[#191f31] relative overflow-hidden border border-white/5">
               <img
-                src="/Hero%20IMG.png"
+                src={heroMentorImage}
                 alt="Mohamad Izza - SOP Specialist & Corporate Mentor"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-top opacity-95 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
