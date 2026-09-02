@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0c1324;
+  --color-surface-dim: #0c1324;
+  --color-surface-bright: #33394c;
+  --color-surface-container-lowest: #070d1f;
+  --color-surface-container-low: #151b2d;
+  --color-surface-container: #191f31;
+  --color-surface-container-high: #23293c;
+  --color-surface-container-highest: #2e3447;
+  --color-on-surface: #dce1fb;
+  --color-on-surface-variant: #c7c4d7;
+  --color-outline: #908fa0;
+  --color-outline-variant: #464554;
+  --color-primary: #c0c1ff;
+  --color-primary-container: #8083ff;
+  --color-secondary: #ffb690;
+  --color-secondary-container: #ec6a06;
+  --color-tertiary: #ddb7ff;
+  --color-error-red: #ef4444;
+  --color-success-green: #22c55e;
+  --color-border-white-10: rgba(255, 255, 255, 0.1);
+  --color-surface-glass: rgba(15, 23, 42, 0.65);
+  --color-indigo-glow: #4338ca;
+
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer utilities {
+  .glass-card {
+    background-color: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    position: relative;
+  }
+  .glow-border {
+    position: absolute;
+    inset: 0;
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+    pointer-events: none;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.35) 0%, rgba(139, 92, 246, 0.15) 100%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  .gradient-text {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #93c5fd, #38bdf8, #60a5fa);
+  }
+  .gradient-text-orange {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #fb923c, #f97316);
+  }
+}
+
+.ambient-glow {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.18) 0%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070d1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #23293c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4338ca;
+}
+
