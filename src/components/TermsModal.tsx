@@ -81,12 +81,12 @@ export const TermsModal: React.FC<TermsModalProps> = ({ type, onClose }) => {
                 </div>
 
                 <div className="p-4 rounded-xl bg-[#0c1324] border border-white/10">
-                  <h4 className="font-bold text-white mb-2 text-orange-400">Sesi 2: Build &amp; Coach (2.5 Jam)</h4>
+                  <h4 className="font-bold text-white mb-2 text-orange-400">Sesi 2: Build &amp; Live Coaching (2 Jam)</h4>
                   <ul className="list-disc list-inside space-y-1 text-xs">
-                    <li>Review Template Standar &amp; RACI Matrix (Responsible, Accountable, Consulted, Informed)</li>
+                    <li>Penerapan <strong>DACI Matrix</strong> (Driver, Approver, Contributor, Informed) untuk kejelasan peran &amp; akuntabilitas PIC</li>
                     <li>Merumuskan Control Point, Input, Output &amp; Exception Handling</li>
                     <li>Penyusunan Form Pendukung &amp; Checklist Operasional</li>
-                    <li>Live Feedback &amp; Perbaikan Draft Peserta</li>
+                    <li>Live Feedback &amp; Perbaikan Draft Peserta secara Langsung</li>
                   </ul>
                 </div>
 

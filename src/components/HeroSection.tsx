@@ -124,7 +124,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onRegisterClick, onOpe
             <div className="w-full aspect-[4/5] rounded-xl bg-[#191f31] relative overflow-hidden border border-white/5">
               <img
                 src={heroMentorImage}
-                alt="Mohamad Izza - SOP Specialist & Corporate Mentor"
+                alt="Mohamad Izza - SOP Specialist & Corporate Coach"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-top opacity-95 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
               />
@@ -144,7 +144,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onRegisterClick, onOpe
                   Mohamad Izza
                 </p>
                 <p className="text-xs uppercase tracking-wider font-bold text-[#c0c1ff] mt-0.5">
-                  SOP Specialist &amp; Corporate Mentor
+                  SOP Specialist &amp; Corporate Coach
                 </p>
                 <div className="mt-2 pt-2 border-t border-white/10 flex items-center justify-center gap-2 text-[11px] font-semibold text-[#dce1fb]">
                   <span>HRDKU.COM</span>

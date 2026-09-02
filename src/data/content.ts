@@ -35,12 +35,12 @@ export const SESSIONS_DATA: SessionInfo[] = [
     colorBadge: 'text-[#ec6a06]',
     items: [
       'Praktek langsung menyusun draft SOP perusahaan masing-masing',
-      'Live coaching & pendampingan langkah demi langkah',
-      'Troubleshooting kendala proses & penyelarasan alur kerja',
-      'Penyusunan format, PIC, input/output & control point awal'
+      'Penerapan DACI Matrix (Driver, Approver, Contributor, Informed) untuk kejelasan peran & akuntabilitas PIC',
+      'Live coaching & pendampingan langkah demi langkah alur kerja',
+      'Penyusunan format, control point, input/output & exception handling'
     ],
     outputTitle: 'Output:',
-    outputDescription: 'Draft SOP nyata perusahaan Anda (bukan sekadar contoh template).',
+    outputDescription: 'Draft SOP nyata perusahaan Anda dengan pemetaan peran akurat berbasis DACI Matrix.',
     duration: 'Online Group Coaching (2 Jam)'
   },
   {
@@ -72,8 +72,8 @@ export const SCHEDULE_DATA = [
     sesi: 'Sesi 2',
     tanggal: 'Sabtu, 10 Okt 2026',
     waktu: '09.00 – 11.00 WIB',
-    fokus: 'Build & Live Coaching',
-    keterangan: 'Coaching interaktif sambil menyusun draft SOP perusahaan masing-masing secara langsung di dalam sesi'
+    fokus: 'Build & Live Coaching (DACI Matrix)',
+    keterangan: 'Coaching interaktif menyusun draft SOP & penetapan PIC akuntabel dengan kerangka DACI Matrix secara langsung di dalam sesi'
   },
   {
     sesi: 'Sesi 3 (1-on-1)',
@@ -164,7 +164,7 @@ export const FAQ_DATA: FaqItem[] = [
 
 export const MENTOR_DATA = {
   name: 'Mohamad Izza, S.HI, MM, CBC, CCC',
-  title: 'SOP Specialist & Mentor',
+  title: 'SOP Specialist & Corporate Coach',
   headline: 'Bukan cuma trainer. Praktisi yang sudah membangun sistem HR & operasional dari level korporat sampai bisnis sendiri.',
   quote: '"Bukan cuma trainer. Praktisi yang sudah membangun sistem HR & operasional dari level korporat sampai bisnis sendiri."',
   currentRole: 'Founder & CEO HRDKU.COM (PT. HRDKU Reksa Talenta) — HR Managed Service & People Development',

@@ -26,7 +26,7 @@ export const MentorSection: React.FC = () => {
                   Mohamad Izza
                 </p>
                 <p className="text-[11px] text-[#c0c1ff] font-semibold">
-                  SOP Specialist &amp; Corporate Mentor
+                  SOP Specialist &amp; Corporate Coach
                 </p>
               </div>
             </div>
