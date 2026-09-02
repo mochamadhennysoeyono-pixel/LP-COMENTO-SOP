@@ -1,7 +1,7 @@
 import React from 'react';
 import { Award, Briefcase, GraduationCap, Quote, Sparkles, CheckCircle2, ShieldCheck } from 'lucide-react';
 import { MENTOR_DATA } from '../data/content';
-import profileMentorImage from '../assets/images/profile_mentor.png';
+import mentorProfileImage from '../assets/images/mentor_img.png';
 
 export const MentorSection: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ export const MentorSection: React.FC = () => {
           <div className="glass-card p-3 rounded-2xl relative shadow-2xl shadow-indigo-950/50">
             <div className="w-full aspect-[4/5] rounded-xl overflow-hidden bg-[#151b2d] relative border border-white/10">
               <img
-                src={profileMentorImage}
+                src={mentorProfileImage}
                 alt={MENTOR_DATA.name}
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"

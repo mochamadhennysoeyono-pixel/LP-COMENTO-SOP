@@ -3,7 +3,7 @@ import { SessionInfo, FaqItem } from '../types';
 export const PROGRAM_CONFIG = {
   adminWhatsApp: '6281234599171', // Konsisten dengan PRD & creative ads (081234599171)
   adminPhoneDisplay: '081234599171',
-  mentorImage: '/Profile%20Mentor.png',
+  mentorImage: '/mentor-img.png',
   totalSlots: 6,
   remainingSlots: 3, // Statis per PRD 6.7
   pricing: {
