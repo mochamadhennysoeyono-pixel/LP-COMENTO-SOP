@@ -35,7 +35,7 @@ export const ScheduleAndFormatSection: React.FC = () => {
     },
     {
       title: '1-on-1 SOP Review',
-      desc: 'Sesi privat 2 jam bedah dokumen tuntas',
+      desc: 'Sesi privat 1,5 jam per perusahaan bedah dokumen tuntas',
       icon: FileCheck2
     }
   ];

@@ -91,7 +91,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ type, onClose }) => {
                 </div>
 
                 <div className="p-4 rounded-xl bg-[#0c1324] border border-white/10">
-                  <h4 className="font-bold text-white mb-2 text-emerald-400">Sesi 3: 1-on-1 SOP Review (~2 Jam Privat)</h4>
+                  <h4 className="font-bold text-white mb-2 text-emerald-400">Sesi 3: 1-on-1 SOP Review (1,5 Jam Privat per Perusahaan)</h4>
                   <ul className="list-disc list-inside space-y-1 text-xs">
                     <li>Pembedahan klausul demi klausul secara privat</li>
                     <li>Simulasi alur operasional &amp; pengujian potensi bottleneck</li>

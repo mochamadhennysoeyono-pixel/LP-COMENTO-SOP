@@ -164,7 +164,7 @@ export const ValueAndDifferentiationSection: React.FC = () => {
                     ✓
                   </div>
                   <div>
-                    <strong className="text-white">Reviewed Until Ready:</strong> 1-on-1 privat review ±2 jam memastikan dokumen lolos uji operasional.
+                    <strong className="text-white">Reviewed Until Ready:</strong> 1-on-1 privat review 1,5 jam per perusahaan memastikan dokumen lolos uji operasional.
                   </div>
                 </li>
               </ul>

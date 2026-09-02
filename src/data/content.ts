@@ -49,14 +49,14 @@ export const SESSIONS_DATA: SessionInfo[] = [
     colorBorder: 'border-t-[#22c55e]',
     colorBadge: 'text-[#22c55e]',
     items: [
-      'Sesi privat one-on-one ±2 jam per peserta/tim',
+      'Sesi privat one-on-one 1,5 jam per perusahaan/tim',
       'Bedah mendalam struktur, flow, PIC, dokumen & control point',
       'Cek potensi bottleneck, kejelasan instruksi & praktik lapangan',
       'Feedback langsung → Revisi on-the-spot → Finalisasi'
     ],
     outputTitle: 'Output:',
     outputDescription: 'SOP yang sudah direview mendalam dan siap langsung dipakai.',
-    duration: 'Private 1-on-1 (±2 Jam per Peserta)'
+    duration: 'Private 1-on-1 (1,5 Jam per Perusahaan)'
   }
 ];
 
@@ -80,7 +80,7 @@ export const SCHEDULE_DATA = [
     tanggal: 'Sabtu, 24 Okt 2026',
     waktu: '08.00 – 17.00 WIB',
     fokus: '1-on-1 SOP Review',
-    keterangan: 'Sesi privat 2 jam terjadwal per peserta/tim'
+    keterangan: 'Sesi privat 1,5 jam terjadwal per perusahaan/tim'
   }
 ];
 
@@ -102,7 +102,7 @@ export const VALUE_DELIVERABLES = [
   'Coaching & Mentoring',
   'SOP Development',
   'Mentor Feedback Langsung',
-  'One-on-One SOP Review ±2 Jam',
+  'One-on-One SOP Review 1,5 Jam',
   'Revisi & Penyempurnaan Tuntas'
 ];
 
