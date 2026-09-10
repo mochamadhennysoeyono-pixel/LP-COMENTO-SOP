@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, MessageSquare, Send, Sparkles, UserCheck } from 'lucide-react';
 import { PROGRAM_CONFIG } from '../data/content';
+import { trackPixel } from '../utils/pixel';
 
 interface WhatsAppChatModalProps {
   isOpen: boolean;
@@ -21,6 +22,7 @@ export const WhatsAppChatModal: React.FC<WhatsAppChatModalProps> = ({ isOpen, on
   ];
 
   const handleSend = () => {
+    trackPixel('Contact', { topic: selectedTopic });
     const text = `Halo Admin SOP Sampai Jadi, saya ingin menanyakan perihal: ${selectedTopic}.
 ${customQuery ? `\nPertanyaan tambahan: ${customQuery}` : ''}`;
     const encoded = encodeURIComponent(text);

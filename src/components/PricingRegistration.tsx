@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { PackageType, Participant } from '../types';
 import { PROGRAM_CONFIG } from '../data/content';
+import { trackPixel } from '../utils/pixel';
 
 export const PricingRegistration: React.FC = () => {
   const [packageType, setPackageType] = useState<PackageType>('individual');
@@ -98,6 +99,12 @@ Mohon info selanjutnya.`;
   };
 
   const handleOpenWhatsApp = () => {
+    trackPixel('Lead', {
+      content_name: `Paket ${packageType === 'individual' ? 'Individual' : 'Team'}`,
+      value: totalAmount,
+      currency: 'IDR'
+    });
+    trackPixel('Contact');
     const message = generateWhatsAppMessage();
     const encoded = encodeURIComponent(message);
     const waUrl = `https://wa.me/${PROGRAM_CONFIG.adminWhatsApp}?text=${encoded}`;
