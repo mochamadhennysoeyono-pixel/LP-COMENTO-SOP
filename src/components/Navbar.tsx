@@ -1,12 +1,12 @@
 import React from 'react';
-import { Layers, MessageSquare, ArrowUpRight } from 'lucide-react';
+import { Layers, ArrowUpRight } from 'lucide-react';
 
 interface NavbarProps {
-  onOpenChat: () => void;
+  onOpenChat?: () => void;
   activeSection: string;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenChat, activeSection }) => {
+export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -117,19 +117,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenChat, activeSection }) => 
         </button>
       </nav>
 
-      {/* Action Buttons */}
-      <div className="flex items-center gap-3">
-        <button
-          onClick={onOpenChat}
-          className="flex items-center gap-2 bg-white/5 hover:bg-white/10 active:scale-95 transition-all border border-white/10 rounded-full px-4 py-2 text-xs font-semibold text-white cursor-pointer"
-          id="btn-chat-admin-header"
-        >
-          <span>Chat Admin</span>
-          <MessageSquare className="w-3.5 h-3.5 text-[#c0c1ff]" />
-        </button>
+      {/* Action Button */}
+      <div className="flex items-center">
         <button
           onClick={() => scrollToSection('investasi')}
-          className="hidden lg:inline-flex items-center gap-1.5 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white rounded-full px-4 py-2 text-xs font-bold shadow-lg shadow-orange-500/20 active:scale-95 transition-all cursor-pointer"
+          className="inline-flex items-center gap-1.5 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white rounded-full px-4 py-2 text-xs font-bold shadow-lg shadow-orange-500/20 active:scale-95 transition-all cursor-pointer"
           id="btn-daftar-header"
         >
           <span>Daftar</span>
